@@ -1,0 +1,137 @@
+.container {
+    width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.clear-all-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.input-group input, .input-group button {
+    line-height: 1.5;
+}
+
+
+.input-group input {
+    margin: -1px 0;
+}
+
+
+.input-group input, .input-group button {
+    box-sizing: border-box;
+}
+
+
+.todo-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.todo-list li span {
+    flex-grow: 1;
+}
+
+.input-group {
+    padding-left: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: stretch;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.tabs button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    flex: 1;
+}
+
+.tabs button.selected {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 3px solid #007bff;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+}
+
+.tabs button:not(.selected) {
+    opacity: 0.6;
+}
